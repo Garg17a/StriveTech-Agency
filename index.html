@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StriveTech Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+
+    <div class="logo-container">
+        <!-- <img src="https://www.dropbox.com/scl/fi/u0d6ot6tpmnvok2trj85z/Untitled-design.png?rlkey=b09qv9ppqfyhzzxpzvb548ls8&st=gb45tg36&dl=1" alt="StriveTech Logo" class="logo"> -->
+        <img src="/Untitled design.png" alt="StriveTech Logo" class="logo">
+
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Add this button inside the <header> or where appropriate -->
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    </header>
+
+    <section id="home" class="large-section">
+        <h1 class="animate-text">Welcome to StriveTech Technologies</h1>
+        <p class="animate-text">Offering expert web and Android development, along with coding guidance, to meet your unique digital needs.</p>
+    </section>    
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>We build responsive and dynamic websites for various domains such as education, construction, hospitals, and more.</p>
+            <div class="service-container">
+                <div class="service-box custom-website" onclick="scrollToContact()">
+                    <div class="sticker">✨</div>
+                    <h4>Custom Website Development</h4>
+                    <p>We build responsive and dynamic websites tailored to your unique needs and goals.</p>
+                </div>
+                <div class="service-box ecommerce-solutions" onclick="scrollToContact()">
+                    <div class="sticker">🛒</div>
+                    <h4>E-commerce Solutions</h4>
+                    <p>Creating scalable and secure e-commerce platforms to drive your online business success.</p>
+                </div>
+                <div class="service-box cms-development" onclick="scrollToContact()">
+                    <div class="sticker">📋</div>
+                    <h4>Content Management Systems (CMS) Development</h4>
+                    <p>Developing CMS solutions to manage your content with ease and flexibility.</p>
+                </div>
+                <div class="service-box landing-page" onclick="scrollToContact()">
+                    <div class="sticker">🚀</div>
+                    <h4>Landing Page Design & Development</h4>
+                    <p>Designing and developing landing pages that convert visitors into customers.</p>
+                </div>
+                <div class="service-box redesign-optimization" onclick="scrollToContact()">
+                    <div class="sticker">🔧</div>
+                    <h4>Website Redesign and Optimization</h4>
+                    <p>Revamping your website for better performance, aesthetics, and user experience.</p>
+                </div>
+                <div class="service-box pwa-development" onclick="scrollToContact()">
+                    <div class="sticker">📱</div>
+                    <h4>Progressive Web App (PWA) Development</h4>
+                    <p>Building PWAs that offer a native app-like experience on the web.</p>
+                </div>
+                <div class="service-box responsive-design" onclick="scrollToContact()">
+                    <div class="sticker">🌐</div>
+                    <h4>Responsive Web Design</h4>
+                    <p>Ensuring your website looks great and functions well on all devices.</p>
+                </div>
+                <div class="service-box seo-services" onclick="scrollToContact()">
+                    <div class="sticker">🔍</div>
+                    <h4>Search Engine Optimization (SEO) Services</h4>
+                    <p>Improving your website's visibility on search engines to attract more organic traffic.</p>
+                </div>
+                <div class="service-box api-integration" onclick="scrollToContact()">
+                    <div class="sticker">🔗</div>
+                    <h4>API Integration Services</h4>
+                    <p>Connecting your systems with third-party services through custom APIs.</p>
+                </div>
+                <div class="service-box web-maintenance" onclick="scrollToContact()">
+                    <div class="sticker">🔄</div>
+                    <h4>Web Maintenance & Support</h4>
+                    <p>Providing ongoing support and maintenance to keep your website running smoothly.</p>
+                </div>
+                <div class="service-box custom-web-app" onclick="scrollToContact()">
+                    <div class="sticker">💻</div>
+                    <h4>Custom Web Application Development</h4>
+                    <p>Developing web applications tailored to your specific business needs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item">
+            <h3>Android Development</h3>
+            <p>Creating user-friendly and robust Android apps for games, education, health, food, and other industries.</p>
+            <div class="service-container">
+                <div class="service-box custom-android-app" onclick="scrollToContact()">
+                    <div class="sticker">📱</div>
+                    <h4>Custom Android App Development</h4>
+                    <p>Building tailored Android apps that meet your specific business needs.</p>
+                </div>
+                <div class="service-box android-ui-ux" onclick="scrollToContact()">
+                    <div class="sticker">🎨</div>
+                    <h4>Android App UI/UX Design</h4>
+                    <p>Designing intuitive and engaging interfaces for a seamless user experience.</p>
+                </div>
+                <div class="service-box app-optimization" onclick="scrollToContact()">
+                    <div class="sticker">🚀</div>
+                    <h4>App Performance Optimization</h4>
+                    <p>Enhancing your app's speed, efficiency, and overall performance.</p>
+                </div>
+                <div class="service-box android-maintenance" onclick="scrollToContact()">
+                    <div class="sticker">🔄</div>
+                    <h4>Android App Maintenance & Support</h4>
+                    <p>Providing ongoing support to keep your Android app running smoothly.</p>
+                </div>
+                
+                <div class="service-box playstore-optimization" onclick="scrollToContact()">
+                    <div class="sticker">🏬</div>
+                    <h4>Google Play Store Submission & Optimization</h4>
+                    <p>Ensuring your app meets all Play Store requirements for successful submission.</p>
+                </div>
+                <div class="service-box cross-platform" onclick="scrollToContact()">
+                    <div class="sticker">🌐</div>
+                    <h4>Cross-Platform App Development</h4>
+                    <p>Creating apps that run seamlessly on Android and other platforms.</p>
+                </div>
+                <div class="service-box app-security" onclick="scrollToContact()">
+                    <div class="sticker">🔒</div>
+                    <h4>App Security & Compliance</h4>
+                    <p>Implementing security measures to protect your app and user data.</p>
+                </div>
+                <div class="service-box app-testing" onclick="scrollToContact()">
+                    <div class="sticker">🧪</div>
+                    <h4>App Testing & Quality Assurance</h4>
+                    <p>Thoroughly testing your app to ensure it meets high-quality standards.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-item">
+            <h3>Coding Learning & Guidance</h3>
+            <p>Offering personalized coding lessons and guidance to help you achieve your programming goals.</p>
+            <div class="service-container">
+                <div class="service-box one-on-one-mentorship" onclick="scrollToContact()">
+                    <div class="sticker">👨‍🏫</div>
+                    <h4>One-on-One Coding Mentorship</h4>
+                    <p>Get personalized guidance and mentorship tailored to your learning pace and goals.</p>
+                </div>
+                <div class="service-box competitive-programming" onclick="scrollToContact()">
+                    <div class="sticker">🏆</div>
+                    <h4>Competitive Programming Preparation</h4>
+                    <p>Prepare for coding competitions with expert-led training and problem-solving sessions.</p>
+                </div>
+                <div class="service-box project-based-learning" onclick="scrollToContact()">
+                    <div class="sticker">💼</div>
+                    <h4>Project-Based Learning Guidance</h4>
+                    <p>Learn by doing with guidance on real-world projects that build your skills.</p>
+                </div>
+                <div class="service-box coding-interview-prep" onclick="scrollToContact()">
+                    <div class="sticker">💻</div>
+                    <h4>Coding Interview Preparation</h4>
+                    <p>Ace your coding interviews with targeted preparation and practice.</p>
+                </div>
+                <div class="service-box web-development-guidance" onclick="scrollToContact()">
+                    <div class="sticker">🌐</div>
+                    <h4>Web Development Guidance</h4>
+                    <p>Receive expert advice on web development, from basics to advanced topics.</p>
+                </div>
+                <div class="service-box mobile-app-assistance" onclick="scrollToContact()">
+                    <div class="sticker">📱</div>
+                    <h4>Mobile App Development Assistance</h4>
+                    <p>Get support in building mobile apps, from design to deployment.</p>
+                </div>
+                <div class="service-box code-reviews" onclick="scrollToContact()">
+                    <div class="sticker">📝</div>
+                    <h4>Code Reviews & Feedback</h4>
+                    <p>Improve your code quality with detailed reviews and constructive feedback.</p>
+                </div>
+                <div class="service-box career-path-guidance" onclick="scrollToContact()">
+                    <div class="sticker">📈</div>
+                    <h4>Career Path Guidance in Tech</h4>
+                    <p>Get advice on choosing the right career path in the tech industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h2>Work Done</h2>
+        <div class="portfolio-item construction-project">
+            <div class="portfolio-thumbnail">
+                <a href="https://lucent-kashata-2c0439.netlify.app/" target="_blank">
+                    <img src="https://www.dropbox.com/scl/fi/4xjskq7xjqjfo9ragvlje/Screenshot-998.png?rlkey=2wdtisdgrjng2o5eoztp2u05q&st=wlttr4l8&dl=1" alt="Construction Website Thumbnail">
+                </a>
+            </div>
+            <div class="portfolio-video">
+                <video controls>
+                    <!-- <source src="https://www.dropbox.com/scl/fi/ldrdycdpv41jkgn69ref1/ConstructionProject.mp4?rlkey=9ce3dz8mq2dygyowwc5fbbto4&st=n40nwgq2&dl=1" type="video/mp4"> -->
+                    <source src="./ConstructionProject.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <p>A brief description of this project and the technologies used.</p> -->
+            </div>
+        </div>
+        <p>This construction project website features a clean design with interactive elements. It was built using HTML, CSS, and JavaScript to showcase various construction services and projects.</p>
+
+        <div class="portfolio-item construction-project">
+            <div class="portfolio-thumbnail">
+                <a href="https://techtreno.com" target="_blank">
+                    <img src="https://www.dropbox.com/scl/fi/annz8arhcdeohdq6aexu5/Screenshot-1000.png?rlkey=1b7fvdjkamddkfff00anc8bk7&st=o9uqsiqf&dl=1" alt="Construction Website Thumbnail">
+                </a>
+            </div>
+            <div class="portfolio-video">
+                <video controls>
+                    <source src="./Techtreno SolutionsProject.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <p>A brief description of this project and the technologies used.</p> -->
+            </div>
+        </div>
+        <p>Techtreno Solutions is a technology-focused platform designed to provide tech solutions. The project utilizes modern web technologies to deliver a seamless user experience.</p>
+
+        <div class="portfolio-item construction-project">
+            <div class="portfolio-thumbnail">
+                <a href="https://aksingh0108.github.io/DigiGlobe-Solutions-Projects-Lab/#shop" target="_blank">
+                    <img src="https://www.dropbox.com/scl/fi/rd4ulzo6sabs89lifsn54/Screenshot-999.png?rlkey=mvosr62y6k227yb6ngdbqh7bw&st=vrtwtg6n&dl=1" alt="Construction Website Thumbnail">
+                </a>
+            </div>
+            <div class="portfolio-video">
+                <video controls>
+                    <source src="./LuxuryWatchesProject.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <p>A brief description of this project and the technologies used.</p> -->
+            </div>
+        </div>
+        <p>The Luxury Watch Project showcases an elegant online shop for high-end watches. It was developed with a focus on luxury branding and a smooth shopping experience.</p>
+
+        <div class="portfolio-item construction-project">
+            <div class="portfolio-thumbnail">
+                <a href="https://toothcornerdentalclinic.com/" target="_blank">
+                    <img src="https://www.dropbox.com/scl/fi/zla8hbx6vrp2a0bvmbiku/Screenshot-1001.png?rlkey=07ef91nvvki67sv637hc66h7f&st=zh1fbps9&dl=1" alt="Construction Website Thumbnail">
+                </a>
+            </div>
+            <div class="portfolio-video">
+                <video controls>
+                    <source src="./Tooth Corner Dental Clinic Project.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <p>A brief description of this project and the technologies used.</p> -->
+            </div>
+        </div>
+        <p>Tooth Corner Dental Clinic's website is designed to provide information about dental services. It features an intuitive layout and is built to enhance patient engagement and ease of navigation.</p>
+        <!-- You can add other portfolio items below as needed -->
+    </section>
+    
+
+    <section id="about" class="large-section">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <div class="about-item">
+                <img src="https://www.dropbox.com/scl/fi/4iy5i08y2mrj8araiglzw/Founder-Pic.jpg?rlkey=yj1h188xt6hr7reogeh9iluea&st=20dem0u3&dl=1" alt="Founder" class="about-image">
+                <h3>Himanshu Garg - Founder</h3>
+                <p>Hello! I'm Himanshu Garg, the founder of StriveTech Technologies. With over 1 year of experience as a Software Engineer, I'm passionate about building websites and apps that meet your needs.</p>
+            </div>
+            <!-- <div class="about-item">
+                <img src="https://www.dropbox.com/scl/fi/swhbux39aawj2i8kzn71d/Co-Founder-Pic.jpg?rlkey=3ejp73xkxgb0y7ike8jvm1evz&st=d973220b&dl=1" alt="Co-Founder" class="about-image">
+                <h3>Ankit Singh - Co-Founder</h3>
+                <p>Hi! I'm Ankit Singh, the co-founder of StriveTech Technologies. I specialize inoftware Engineering and am committed to helping our clients succeed by providing top-notch solutions.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="contact" class="large-section">
+        <h2>Contact Us</h2>
+        <form method="POST" name="google-sheet">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+    
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="Contact" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="Message" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-item">
+            <p>"StriveTech Technologies transformed our website and delivered exceptional results!"</p>
+            <cite>Himanshu Garg, CEO of Company</cite>
+        </div>
+        <!-- Add more testimonials similarly -->
+    </section>
+
+
+
+    <!-- Add this inside the <body> tag at the top -->
+    
+
+    <!-- <footer>
+        <p>&copy; 2024 StriveTech Technologies. All Rights Reserved.</p>
+    </footer> -->
+    <footer>
+        <p>&copy; 2024 StriveTech Technologies. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/strivetech-technologies/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="https://github.com/yourprofile" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> -->
+        </div>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+
+    <script src="script.js"></script>
+    <script>
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/66ce118850c10f7a00a1003c/1i6af9078';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+
+    <!-- Google Sheets Integration -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyjdSUHKGfxUoRnq3r3i6XfhpX8D51Ko3-ABPY3f5g8Gn2HnHpBwGFGbcu7TQun8NRrsQ/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides img");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        document.querySelector('.prev').addEventListener('click', function() {
+            slideIndex -= 2;
+            showSlides();
+        });
+
+        document.querySelector('.next').addEventListener('click', function() {
+            showSlides();
+        });
+    </script>
+    
+
+    
+    <script src="script.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+          "particles": {
+            "number": {
+              "value": 60, /* Number of particles */
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff" /* White particles */
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false
+            },
+            "size": {
+              "value": 3,
+              "random": true
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 7,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "repulse": {
+                "distance": 100,
+                "duration": 0.4
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      </script>
+      
+
+
+
+
+</body>
+</html>
