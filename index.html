@@ -12,7 +12,7 @@
 
     <div class="logo-container">
         <!-- <img src="https://www.dropbox.com/scl/fi/u0d6ot6tpmnvok2trj85z/Untitled-design.png?rlkey=b09qv9ppqfyhzzxpzvb548ls8&st=gb45tg36&dl=1" alt="StriveTech Logo" class="logo"> -->
-        <img src="/Untitled design.png" alt="StriveTech Logo" class="logo">
+        <img src="./Untitled design.png" alt="StriveTech Logo" class="logo">
 
     </div>
 
@@ -284,19 +284,24 @@
 
     <section id="contact" class="large-section">
         <h2>Contact Us</h2>
-        <form method="POST" name="google-sheet">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required>
-    
-            <label for="contact">Contact:</label>
-            <input type="text" id="contact" name="Contact" required>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="Message" required></textarea>
-    
-            <button type="submit">Submit</button>
+        <form method="POST" action="https://formspree.io/f/your-email-here">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
+        <p>We'd love to hear from you! Feel free to reach out with any questions or project ideas.</p>
     </section>
+
 
 
     <section id="testimonials">
