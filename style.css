@@ -796,7 +796,7 @@ p {
 }
 
 
-#home {
+/* #home {
     background: linear-gradient(to right, #00050b, #010213);
     background: linear-gradient(to left, #02265f, #010213);
     color: white;
@@ -807,13 +807,17 @@ p {
     height: 100vh;
     opacity: 0;
     animation: fadeIn 3s forwards, slideIn 1.5s forwards;
-    border-radius: 30px; /* Adjust the value as needed to round the corners */
-    overflow: hidden; /* Ensures that the content stays within the rounded corners */
+    border-radius: 30px; 
+    overflow: hidden; 
 } 
+ */
+
+ 
 
 
 
-#home h1 {
+
+/* #home h1 {
     font-size: 2rem;
     margin: 0;
     opacity: 0;
@@ -825,7 +829,121 @@ p {
     margin-top: 20px;
     opacity: 0;
     animation: fadeInText 4s forwards, slideInText 2.5s forwards;
+} */
+
+
+#home {
+    background: linear-gradient(to left, #02265f, #010213); /* One gradient is enough */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0;
+    animation: fadeIn 3s forwards, slideIn 1.5s forwards;
+    border-radius: 30px; /* Rounded corners */
+    overflow: hidden;
+    /* padding: 20px;  */
+    box-sizing: border-box; 
 }
+
+#home h1 {
+    font-size: 2rem;
+    margin: 0;
+    opacity: 0;
+    animation: fadeInText 3s forwards, slideInText 2s forwards;
+    text-align: center; /* Center text for better alignment on mobile */
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInText 4s forwards, slideInText 2.5s forwards;
+    text-align: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.home-image {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #home {
+        padding: 90px 20px; /* Increase padding for better spacing */
+        height: auto; /* Let height adjust based on content */
+    }
+
+    #home h1 {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+
+    #home p {
+        font-size: 1rem; /* Adjust paragraph size for readability */
+    }
+
+    .home-image {
+        width: 90%; /* Further reduce image size on small screens */
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 1.2rem; /* Smaller font size for very small devices */
+    }
+
+    #home p {
+        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    .home-image {
+        width: 100%; /* Make the image full width */
+        max-width: 200px; /* Further limit max width */
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInText {
+    from { transform: translateX(-50px); }
+    to { transform: translateX(0); }
+}
+
+
+
+
+
+
+
+
+
 
 /* Keyframes for animations */
 @keyframes fadeIn {
@@ -1050,22 +1168,22 @@ footer p {
     }
 
     /* Responsive Layout for Home Section */
-    .home-container {
+    /* .home{
         display: flex;
-        flex-direction: column; /* Stack content vertically on small screens */
+        flex-direction: column; 
         align-items: center;
     }
 
-    .home-content {
+    .home{
         width: 100%;
-        padding: 10px; /* Add padding */
+        padding: 10px;
     }
 
     .home-image {
-        width: 80%; /* Adjust image size */
-        max-width: 300px; /* Limit the maximum width */
-        margin-bottom: 20px; /* Add spacing */
-    }
+        width: 80%; 
+        max-width: 300px; 
+        margin-bottom: 20px; 
+    } */
 
     /* Adjust Tag Styling for Mobile */
     .tag-container {
