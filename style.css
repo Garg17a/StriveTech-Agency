@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding:0;
     /* background: linear-gradient(135deg, #6a0dad, #9d50bb, #b06ab3); */
     background:black;
     color: #ffffff;
@@ -9,10 +9,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; 
 }
-
-
-
 
 
 
@@ -52,14 +50,42 @@ body.dark-mode {
 
 /* Testimonials Section */
 #testimonials {
-    background-color: #121212;
+    background-color: #000000;
     padding: 2rem;
+    border-radius: 50px;
 }
 .testimonial-item {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 4px;
+    border-radius: 20px;
+}
+
+
+
+/* #testimonials {
+    background-color: #000000;
+    padding: 2rem;
+    border-radius: 30px;
+}*/
+
+#testimonials h2{
+    color: #e0b3ff;
+} 
+
+#testimonials p, #testimonials cite {
+    color: #fff;
+} 
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+    #testimonials {
+        background-color: #f0f0f0; /* Light background for light mode */
+    }
+
+    #testimonials h2, #testimonials p, #testimonials cite {
+        color: #000; /* Black text for light mode */
+    }
 }
 
 
@@ -74,7 +100,8 @@ body.dark-mode {
 .logo {
     width: 75px;
     height: 75px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 20%;
     object-fit: cover;
 }
 
@@ -128,7 +155,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 40px;
+    margin: 0 30px;
     font-size: 18px;
 }
 
@@ -146,11 +173,13 @@ nav ul li a:hover {
 
 nav ul li a {
     color: #ffffff;
+    /* color: #e0b3ff; */
     text-decoration: none;
     font-weight: 800;
     padding-bottom: 5px; /* Add padding for the underline effect */
     position: relative;
     transition: color 0.3s ease;
+    font-size: 17px;
 }
 
 /* Underline effect */
@@ -224,6 +253,10 @@ p {
     color: #d1a3ff; /* Keep the color or change it as per your design */
     margin-bottom: 15px; /* Adjust the margin if needed */
     font-weight: bold; /* Optional: Make the text bold */
+}
+
+.service-item p{
+    color: #fff; 
 }
 
 
@@ -547,6 +580,12 @@ p {
     border: solid 1px rgb(157, 199, 236);
 }
 
+#portfolio p {
+    color: #fff; /* White text for dark mode */
+}
+
+
+
 /* Optional: Add responsive design for smaller screens */
 @media (max-width: 768px) {
     .portfolio-item {
@@ -794,6 +833,29 @@ p {
     background-color: #e0b3ff;
     transform: scale(1.05);
 }
+
+#contact p {
+    color: #fff; /* White text for dark mode */
+}
+
+
+
+@media (prefers-color-scheme: light) {
+    #contact {
+        background-color: #f0f0f0; /* Light background for light mode */
+    }
+
+    #contact h2, #contact p, #contact label {
+        color: #000; /* Black text for light mode */
+    }
+
+    #contact input, #contact textarea {
+        background-color: #fff; /* Light background for inputs */
+        color: #000; /* Black text for inputs */
+        border: 1px solid #ccc;
+    }
+}
+
 
 
 /* #home {
@@ -1117,7 +1179,8 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000; /* Dark background */
+    background-color: #000000;
+    /* background-color: rgb(30, 11, 66); */
     z-index: -1; /* Behind all content */
     pointer-events: none; /* Allows clicks to pass through */
   }
@@ -1248,3 +1311,14 @@ footer p {
         height: 120px; /* Adjust image size */
     }
 }
+
+
+
+#home,#services, #portfolio { /* Adjust as necessary */
+    margin: -16px 5px; /* Decrease space between sections */
+}
+
+#about, #contact, #testimonials { /* Adjust as necessary */
+    margin: -30px 5px; /* Decrease space between sections */
+}
+
