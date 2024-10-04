@@ -915,16 +915,18 @@ p {
     box-sizing: border-box;
     padding-left: 40px; 
     
-} 
+}
+
+
+header, #home{
+    margin:15px;
+}
 
 
 
+/* 
 
-
-
-
-
-/* #home {
+#home {
     background: linear-gradient(to left, #02265f, #010213); 
     color: white;
     display: flex;
@@ -932,7 +934,7 @@ p {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 980px;
+    width: 980px; 
     margin: 0 auto; 
     opacity: 0;
     animation: fadeIn 3s forwards, slideIn 1.5s forwards;
@@ -1332,3 +1334,121 @@ footer p {
     margin: -30px 5px; /* Decrease space between sections */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* New CSS */
+
+
+
+
+
+/* Initial styles for the headings */
+h1.animate-text, h2.animate-text {
+    position: relative;
+    display: inline-block;
+    color: #e0b3ff;
+    opacity: 0; /* Initially hidden */
+    border: 2px solid transparent; /* No border initially */
+    transition: opacity 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+/* Keyframe for the outline animation */
+@keyframes outlineAnimation {
+    0% {
+        border-color: transparent;
+        opacity: 0;
+    }
+    100% {
+        border-color: white; /* or your desired color */
+        opacity: 1;
+    }
+}
+
+/* Apply animation class when in view */
+.in-view {
+    animation: outlineAnimation 1.5s forwards ease-in-out;
+}
+
+
+
+
+
+/* Style for section headings */
+section h1 {
+    position: relative;
+    font-size: 2rem; /* Adjust heading size */
+    color: #e0b3ff; /* Heading text color */
+    margin-bottom: 20px;
+    display: inline-block; /* To apply underline animation */
+    padding-bottom: 5px;
+}
+
+/* Underline effect */
+section h1::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b79aca; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Smooth underline animation */
+}
+
+/* Hover effect: underline animation */
+section h1:hover::after,
+section h1:focus::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+/* Optional: Animation when heading scrolls into view */
+.in-view::after {
+    width: 100%; /* Show underline when heading is in view */
+}
+
+
+
+section h2 {
+    position: relative;
+    font-size: 2rem; /* Adjust heading size */
+    color: #e0b3ff; /* Heading text color */
+    margin-bottom: 20px;
+    display: inline-block; /* To apply underline animation */
+    padding-bottom: 5px;
+}
+
+/* Underline effect */
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b79aca; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Smooth underline animation */
+}
+
+/* Hover effect: underline animation */
+section h2:hover::after,
+section h2:focus::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+/* Optional: Animation when heading scrolls into view */
+.in-view::after {
+    width: 100%; /* Show underline when heading is in view */
+}

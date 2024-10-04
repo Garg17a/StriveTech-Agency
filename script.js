@@ -114,6 +114,57 @@ setInterval(() => showSlide(currentIndex + 1), 5000); // Change slides every 5 s
 
 
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const animateElements = document.querySelectorAll('.animate-text');
+
+        // Set up the Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Add the "in-view" class to trigger the animation
+                    entry.target.classList.add('in-view');
+                }
+            });
+        });
+
+        // Observe each heading with the 'animate-text' class
+        animateElements.forEach((el) => observer.observe(el));
+    });
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const sectionHeadings = document.querySelectorAll('section h1');
+
+    // Set up the Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Add the "in-view" class to trigger the underline animation
+                entry.target.classList.add('in-view');
+            }
+        });
+    });
+
+    // Observe each heading in the sections
+    sectionHeadings.forEach((heading) => observer.observe(heading));
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sectionHeadings = document.querySelectorAll('section h2');
+
+    // Set up the Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Add the "in-view" class to trigger the underline animation
+                entry.target.classList.add('in-view');
+            }
+        });
+    });
+
+    // Observe each heading in the sections
+    sectionHeadings.forEach((heading) => observer.observe(heading));
+});
