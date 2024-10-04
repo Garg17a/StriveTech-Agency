@@ -287,24 +287,29 @@
 
     <section id="contact" class="large-section">
         <h2>Contact Us</h2>
-        <form method="POST" action="https://formspree.io/f/garg80601@gmail.com">
+        <form method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
-                <!-- <input type="text" id="name" name="name" required placeholder="Your Name"> -->
-                <textarea id="name" name="name" required placeholder="Your Name"></textarea>
+                <input type="text" id="name" name="Name" required placeholder="Your Name">
+                <!-- <textarea id="name" name="name" required placeholder="Your Name"></textarea> -->
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <!-- <input type="email" id="email" name="_replyto" required placeholder="Your Email"> -->
-                <textarea id="email" name="email" required placeholder="Your Email"></textarea>
+                <input type="email" id="email" name="Email" required placeholder="Your Email">
+                <!-- <textarea id="email" name="email" required placeholder="Your Email"></textarea> -->
+            </div>
+            <div class="form-group"></div>
+                <label for="contact">Contact</label>
+                <input type="contact" id="contact" name="Contact" required placeholder="Your Phone No.">
+                <!-- <textarea id="email" name="email" required placeholder="Your Email"></textarea> -->
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                <textarea id="message" name="Message" rows="5" required placeholder="Your Message"></textarea>
             </div>
             <button type="submit">Send Message</button>
         </form>
-        <p>We'd love to hear from you! Feel free to reach out with any questions or project ideas.</p>
+        <!-- <p>We'd love to hear from you! Feel free to reach out with any questions or project ideas.</p> -->
     </section>
 
 
@@ -355,7 +360,7 @@
 
     <!-- Google Sheets Integration -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyjdSUHKGfxUoRnq3r3i6XfhpX8D51Ko3-ABPY3f5g8Gn2HnHpBwGFGbcu7TQun8NRrsQ/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz6-A6l5Gva1PJzdM6cndd94BiQlzChoGtwFv8YWdw6ASf9UCAHbfMQtQGWAPYtyY4reQ/exec'
         const form = document.forms['google-sheet']
       
         form.addEventListener('submit', e => {
@@ -364,7 +369,7 @@
             .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 
     <script>
         let slideIndex = 0;
