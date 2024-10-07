@@ -1,5 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Fjalla One', sans-serif;
+
+
     margin: 0;
     /* background: linear-gradient(135deg, #6a0dad, #9d50bb, #b06ab3); */
     background:black;
@@ -11,6 +15,18 @@ body {
     justify-content: space-between; 
     /* justify-content: center; */
     align-items: center;
+    background-image: url('/background_template_1_dark.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+
+    /* background: linear-gradient(135deg, #000000 0%, #8B0000 10%, #2C2C2C 100%);
+    height: 100vh;
+    margin: 0; */
+
+
+
 }
 
 
@@ -51,7 +67,7 @@ body.dark-mode {
 
 /* Testimonials Section */
 #testimonials {
-    background-color: #000000;
+    /* background-color: #000000; */
     padding: 2rem;
     border-radius: 50px;
 }
@@ -1083,7 +1099,7 @@ header, #home{
 /* Footer Styles */
 footer {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.6); */
     color: #ffffff;
 }
 
@@ -1473,3 +1489,4 @@ section h2:focus::after {
 .in-view::after {
     width: 100%; /* Show underline when heading is in view */
 }
+
